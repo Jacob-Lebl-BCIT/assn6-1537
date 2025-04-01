@@ -25,3 +25,22 @@ app.use(session({
   app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
   });
+
+
+  // MySQL connection
+  const mysql = require('mysql2');
+
+  const db = mysql.createConnectoin({
+    host: 'localhost',
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: 'assignment6'
+  });
+
+  db.connect(err => {
+    if (err) {
+        console.error('DB connection failed: ', err);
+    } else {
+        console.log('Connected to database!');
+    }
+  });
