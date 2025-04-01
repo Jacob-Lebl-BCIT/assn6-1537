@@ -1,0 +1,19 @@
+{
+  "name": "assn6-leblj",
+  "version": "1.0.0",
+  "description": "Database fun",
+  "license": "UNLICENSED",
+  "author": "Jacob Lebl",
+  "type": "commonjs",
+  "main": "assignment6.js",
+  "scripts": {
+    "test": "node assignment6.js",
+    "devStart": "nodemon assignment6.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.0",
+    "nodemon": "^3.1.9"
+  }
+}
